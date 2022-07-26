@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function (){
+        const interval = setInterval(()=>{
+          if(!window.au3) return
+          const script = document.createElement('script')
+          script.src = '/bundle.js'
+          document.body.append(script)
+          clearInterval(interval)
+        }, 1)
+      })()
+    </script>
+  </body>
+</html>

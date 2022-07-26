@@ -1,0 +1,20 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    margin: 0;
+}
+
+#app-bar {
+    #window-buttons>button {
+        border-radius: 0px !important;
+        width: 60px !important;
+        height: 35px !important;
+        min-width: unset !important;
+    }
+}
+
+#App {
+    .body {
+        margin: 5px;
+    }
+}
