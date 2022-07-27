@@ -1,5 +1,9 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+html {
+    -webkit-user-select: none;
+}
+
 body {
     margin: 0;
 }

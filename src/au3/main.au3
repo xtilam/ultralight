@@ -30,11 +30,7 @@ EndFunc   ;==>main
 
 Func downloadLibrary()
 	If (@Compiled) Then
-		REQUIRE_Zip('https://raw.githubusercontent.com/xtilam/ultralight-lib-au3/master/bin.zip', '', 'Ultralight Depenpencies')
+		REQUIRE_Zip('https://raw.githubusercontent.com/xtilam/ultralight/master/au3-lib/bin.zip', '', 'Ultralight Depenpencies')
 		REQUIRE_StartDownload() 
 	EndIf
 EndFunc   ;==>downloadLibrary
-
-Func getList()
-	Return ProcessList()
-EndFunc   ;==>getList

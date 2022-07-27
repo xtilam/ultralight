@@ -1,10 +1,9 @@
 #include-once
+
 #include "../lib/JSON/OO_JSON.au3"
 #include "../lib/ultralight_proc.au3"
 #include <File.au3>
 #include <InetConstants.au3>
-#include <Array.au3>
-#include <WinAPIProc.au3>
 
 Func proc_download($data)
 	UltralightProc_AutoKill()

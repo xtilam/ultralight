@@ -11,6 +11,6 @@ export const au3Action = {
             au3('Ultralight_StopMoveApp')
         }
     },
-    exit: ()=>au3('exitApp')
+    exit: ()=>au3('Ultralight_ExitApp')
 }
 

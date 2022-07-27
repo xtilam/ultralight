@@ -229,6 +229,10 @@ Func Ultralight_SPA($scriptEncryptPath = @ScriptDir & '\data.dat', $html = $HTML
 	Ultralight_OnReadyExecute('executeResource("' & StringReplace($scriptEncryptPath, '\', '\\') & '");au3("FileDelete", "' & StringReplace($indexPath, '\', '\\') & '");')
 EndFunc   ;==>Ultralight_SPA
 
+Func Ultralight_ExitApp()
+	ProcessClose(@AutoItPID)
+EndFunc
+
 Func ll($content, $subScription = '')
 	ConsoleWrite($subScription & " => " & $content & @CRLF)
 EndFunc   ;==>ll
